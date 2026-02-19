@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Important Question</title>
+<style>
+body {
+  text-align: center;
+  margin-top: 150px;
+  font-family: Arial;
+  background-color: #fff0f5;
+}
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>Will you be my forever husband again? 💍❤️</h1>
+
+<button onclick="yes()">Yes ❤️</button>
+<button onmouseover="moveButton(this)">No 😜</button>
+
+<script>
+function yes() {
+  alert("I knew it! Love you forever ❤️");
+}
+
+function moveButton(button) {
+  button.style.position = "absolute";
+  button.style.left = Math.random() * window.innerWidth + "px";
+  button.style.top = Math.random() * window.innerHeight + "px";
+}
+</script>
+
+</body>
+</html>
